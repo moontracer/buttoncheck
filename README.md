@@ -72,3 +72,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 I couldn't find a version of the GBVS Logo that was labeled for reuse with modification. Should I still use it?
 
 I did find a menu icon that was properly labeled though.
+
+TO DO:
+Add functionality to menu button and Login button
+Add text shadowing around character names

@@ -1,3 +1,8 @@
+/* Importing Noto Sans JP - This font is used for the character header */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+
+/* TO DO: LOOK INTO PAIRING FONTS */
+
 /* These style settings apply to all views */
 
 #loginContainer {
@@ -31,6 +36,18 @@ nav {
     background-color: #DADFE5;
 }
 
+/* All mobile versions of the site will have the same mobile header color */
+#mobileHeader {
+    background-color: #F1F6F7;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Temporarily setting the body's background color to match Granblue */
+body {
+    background-color: #E2EDEE;
+}
+
 /* TODO: Add color for selected link */
 
 /* IPhone 8 Plus Design */
@@ -47,6 +64,11 @@ nav {
         }
         #loginContainer {
             font-size: 90%;
-            /* Should I use percents instead of pixels? */
+        }
+        #charImage {
+            display: block;
+            width: 50%;
+            /* Centering Image */
+            margin: 0 auto;
         }
     }
