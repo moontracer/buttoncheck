@@ -1,22 +1,52 @@
-.App {
-  text-align: center;
+/* These style settings apply to all views */
+
+#loginContainer {
+    color: #59A4FF;
 }
 
-.App-logo {
-  height: 40vmin;
+/* removing underline from link */
+#navLogin:link {
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* removing underline from visited link */
+#navLogin:visited {
+    text-decoration: none;
+    color: #59A4FF;
 }
 
-.App-link {
-  color: #09d3ac;
+/* TODO: Add in neat hover effect */
+#navLogin:hover {
+    text-decoration: none;
 }
+
+/* Setting nav as flex */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    background-color: #DADFE5;
+}
+
+/* TODO: Add color for selected link */
+
+/* IPhone 8 Plus Design */
+@media only screen
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (-webkit-device-pixel-ratio : 3) { 
+        #navMenuMarker {
+            width: 6%;
+        }
+        #navMainLogo {
+            width: 30%;
+            height: 30%;
+        }
+        #loginContainer {
+            font-size: 90%;
+            /* Should I use percents instead of pixels? */
+        }
+    }

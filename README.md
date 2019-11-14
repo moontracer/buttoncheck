@@ -66,3 +66,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Thoughts
+
+I couldn't find a version of the GBVS Logo that was labeled for reuse with modification. Should I still use it?
+
+I did find a menu icon that was properly labeled though.
