@@ -48,6 +48,33 @@ body {
     background-color: #E2EDEE;
 }
 
+#questionSearch {
+    outline: none;
+}
+
+#QAButtonContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#pageMoveContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#searchContainer {
+    display: flex;
+}
+
+#questionTimestamp {
+    font-weight: 250;
+}
+
+#questionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
 /* TODO: Add color for selected link */
 
 /* IPhone 8 Plus Design */
@@ -77,5 +104,35 @@ body {
             margin: 9%;
             border: 2px solid #5C979C;
             padding: 3%;
+        }
+        /* Question Search Page CSS */
+        #questionSearch {
+            width: 55%;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        #QAButtonContainer {
+            justify-content: space-around;
+            margin-top: 6%;
+        }
+        .QAButton {
+            width: 22%;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 90%;
+        }
+        #searchContainer {
+            justify-content: space-around;
+            margin-top: 6%;
+        }
+        #pageMoveContainer {
+            justify-content: space-around;
+            margin-top: 6%;
+        }
+        .pageMoveButtons {
+            width: 25%;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 90%;
+        }
+        #questionContainer {
+            
         }
     }
