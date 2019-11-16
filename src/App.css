@@ -132,7 +132,10 @@ body {
             font-family: 'Noto Sans JP', sans-serif;
             font-size: 90%;
         }
-        #questionContainer {
-            
+        /* CSS For New Layout */
+        #newDesc {
+            font-size: 80%;
+            /* Eventually change this to percents */
+            margin-bottom: 7%;
         }
     }
