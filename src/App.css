@@ -75,6 +75,17 @@ body {
     flex-direction: column;
 }
 
+/* CSS FOR MOBILE CHARACTER FORUM: IMPORTANT! */
+#sectionHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#subforumSelect {
+    display: block;
+}
+
 /* TODO: Add color for selected link */
 
 /* IPhone 8 Plus Design */
@@ -137,5 +148,21 @@ body {
             font-size: 80%;
             /* Eventually change this to percents */
             margin-bottom: 7%;
+        }
+        /* CSS For Mobile Character Forum */
+        #subforumLogo {
+            width: 26%;
+            margin: 3%;
+        }
+        #sectionSubhead {
+            /* font-size: 25px; */
+            font-size: 1.8em;
+        }
+        #sectionHeader {
+            margin-top: 3%;
+        }
+        #subforumSelect {
+            font-size: 18px;
+            margin: 0 auto;
         }
     }
