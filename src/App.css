@@ -171,4 +171,19 @@ body {
             font-size: 20px;
             width: 45%;
         }
+        #subforumPostHead {
+            margin-bottom: -7px;
+            /* Change from pixels to another measurement, negative margin here isn't bad practice */
+        }
+        #subpostUserLogo {
+            width: 18%;
+            /* Margin isn't removed for this whole logo as the margin that's removed will be the entire section itself */
+        }
+        #subforumPostListing {
+            margin-top: 7%;
+        }
+        #alignPostListing {
+            display: inline-block;
+            /* Treat a flex element like an inline-block? Work on this with flexbox. */
+        }
     }

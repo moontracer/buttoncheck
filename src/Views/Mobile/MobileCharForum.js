@@ -19,6 +19,14 @@ class MobileCharForum extends React.Component {
                     <option value="Okizeme">Okizeme</option>
                 </select>
                 </div>
+                {/* Section for Posts */}
+                <section id="subforumPostListing">
+                    <img src={TestIcon} alt="Sub Post User Logo" id="subpostUserLogo" />
+                    <div id="alignPostListing">
+                    <h3 id="subforumPostHead">Katalina's Okizeme Options</h3>
+                    <button>Okizeme</button>
+                    </div>
+                </section>
             </div>
         )
     }
