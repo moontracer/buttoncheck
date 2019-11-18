@@ -82,8 +82,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-#subforumSelect {
-    display: block;
+#subforumButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 /* TODO: Add color for selected link */
@@ -163,6 +165,10 @@ body {
         }
         #subforumSelect {
             font-size: 18px;
-            margin: 0 auto;
+            /* CHANGE THIS TO EM LATER ON */
+        }
+        #subforumCreateButton {
+            font-size: 20px;
+            width: 45%;
         }
     }

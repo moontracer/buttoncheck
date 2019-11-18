@@ -9,12 +9,16 @@ class MobileCharForum extends React.Component {
                 <img src={TestIcon} alt="Subforum Char Logo" id="subforumLogo" />
                 <p id="sectionSubhead">Katalina Discussion</p>
                 </section>
+                {/* Adding Create A Topic Button */}
+                <div id="subforumButtons">
+                <button id="subforumCreateButton">Create Topic</button>
                 <select id="subforumSelect">
                     <option selected="Selected">Please Select A Tag:</option>
                     <option value="Combos">Combos</option>
                     <option value="Mixups">Mixups</option>
                     <option value="Okizeme">Okizeme</option>
                 </select>
+                </div>
             </div>
         )
     }
