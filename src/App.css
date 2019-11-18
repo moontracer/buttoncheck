@@ -172,7 +172,7 @@ body {
             width: 45%;
         }
         #subforumPostHead {
-            margin-bottom: -7px;
+            /* margin-bottom: -7px; */
             /* Change from pixels to another measurement, negative margin here isn't bad practice */
         }
         #subpostUserLogo {
@@ -182,8 +182,15 @@ body {
         #subforumPostListing {
             margin-top: 7%;
         }
-        #alignPostListing {
+        /* Testing */
+        #subpostTimestamp {
+            display: inline;
+            text-align: right;
+        }
+        #subforumPostContent {
+            /* display: flex;
+            flex-direction: row; */
             display: inline-block;
-            /* Treat a flex element like an inline-block? Work on this with flexbox. */
+            margin-left: 10%;
         }
     }

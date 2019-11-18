@@ -1,5 +1,6 @@
 import React from 'react';
 import TestIcon from '../../images/TestIcon.png';
+import subforumPFPTest from '../../images/subforumPFPTest.png';
 
 class MobileCharForum extends React.Component {
     render(){
@@ -21,10 +22,11 @@ class MobileCharForum extends React.Component {
                 </div>
                 {/* Section for Posts */}
                 <section id="subforumPostListing">
-                    <img src={TestIcon} alt="Sub Post User Logo" id="subpostUserLogo" />
-                    <div id="alignPostListing">
+                    <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
+                    <div id="subforumPostContent">
                     <h3 id="subforumPostHead">Katalina's Okizeme Options</h3>
                     <button>Okizeme</button>
+                    <p id="subpostTimestamp">Last post 4h ago</p>
                     </div>
                 </section>
             </div>
