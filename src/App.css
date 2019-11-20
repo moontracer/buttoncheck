@@ -180,7 +180,7 @@ body {
             /* Margin isn't removed for this whole logo as the margin that's removed will be the entire section itself */
         }
         #subforumPostListing {
-            margin-top: 7%;
+            margin-top: 5%;
         }
         /* Testing */
         #subpostTimestamp {
@@ -191,7 +191,10 @@ body {
             /* display: flex;
             flex-direction: row; */
             display: inline-block;
-            margin-left: 10%;
+            /*Margin adjusted from 10%*/
+            margin-left: 6%;
+            position: relative;
+            top: -11px;
         }
         #subpostCommentIcon {
             width: 4%;

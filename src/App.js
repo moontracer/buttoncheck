@@ -22,3 +22,8 @@ function App() {
 }
 
 export default App;
+
+/*
+  Ideas:
+  Move comments down the page.
+*/

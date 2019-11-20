@@ -28,9 +28,6 @@ class MobileCharForum extends React.Component {
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
                     <h3 id="subforumPostHead">Katalina's Okizeme Options
-                    <span>
-                    <img src={comment} alt="postComment" id="subpostCommentIcon" />
-                    </span>
                     </h3>
                     <button>Okizeme</button>
                     <p id="subpostTimestamp">Last post 4h ago</p>
@@ -38,9 +35,6 @@ class MobileCharForum extends React.Component {
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
                     <h3 id="subforumPostHead">Katalina's Okizeme Options
-                    <span>
-                    <img src={comment} alt="postComment" id="subpostCommentIcon" />
-                    </span>
                     </h3>
                     <button>Okizeme</button>
                     <p id="subpostTimestamp">Last post 4h ago</p>
@@ -48,9 +42,6 @@ class MobileCharForum extends React.Component {
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
                     <h3 id="subforumPostHead">Katalina's Okizeme Options
-                    <span>
-                    <img src={comment} alt="postComment" id="subpostCommentIcon" />
-                    </span>
                     </h3>
                     <button>Okizeme</button>
                     <p id="subpostTimestamp">Last post 4h ago</p>
@@ -58,9 +49,6 @@ class MobileCharForum extends React.Component {
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
                     <h3 id="subforumPostHead">Katalina's Okizeme Options
-                    <span>
-                    <img src={comment} alt="postComment" id="subpostCommentIcon" />
-                    </span>
                     </h3>
                     <button>Okizeme</button>
                     <p id="subpostTimestamp">Last post 4h ago</p>
