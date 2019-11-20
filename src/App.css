@@ -193,4 +193,11 @@ body {
             display: inline-block;
             margin-left: 10%;
         }
+        #subpostCommentIcon {
+            width: 4%;
+            height: 4%;
+            right: 7%;
+            position: absolute;
+            /* Prevents content from being pushed */
+        }
     }

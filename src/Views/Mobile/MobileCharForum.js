@@ -1,6 +1,7 @@
 import React from 'react';
 import TestIcon from '../../images/TestIcon.png';
 import subforumPFPTest from '../../images/subforumPFPTest.png';
+import comment from '../../images/comment.png';
 
 class MobileCharForum extends React.Component {
     render(){
@@ -14,7 +15,7 @@ class MobileCharForum extends React.Component {
                 <div id="subforumButtons">
                 <button id="subforumCreateButton">Create Topic</button>
                 <select id="subforumSelect">
-                    <option selected="Selected">Please Select A Tag:</option>
+                    <option defaultValue="Selected">Please Select A Tag:</option>
                     <option value="Combos">Combos</option>
                     <option value="Mixups">Mixups</option>
                     <option value="Okizeme">Okizeme</option>
@@ -24,7 +25,41 @@ class MobileCharForum extends React.Component {
                 <section id="subforumPostListing">
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
-                    <h3 id="subforumPostHead">Katalina's Okizeme Options</h3>
+                    <h3 id="subforumPostHead">Katalina's Okizeme Options
+                    <span>
+                    <img src={comment} alt="postComment" id="subpostCommentIcon" />
+                    </span>
+                    </h3>
+                    <button>Okizeme</button>
+                    <p id="subpostTimestamp">Last post 4h ago</p>
+                    </div>
+                    <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
+                    <div id="subforumPostContent">
+                    <h3 id="subforumPostHead">Katalina's Okizeme Options
+                    <span>
+                    <img src={comment} alt="postComment" id="subpostCommentIcon" />
+                    </span>
+                    </h3>
+                    <button>Okizeme</button>
+                    <p id="subpostTimestamp">Last post 4h ago</p>
+                    </div>
+                    <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
+                    <div id="subforumPostContent">
+                    <h3 id="subforumPostHead">Katalina's Okizeme Options
+                    <span>
+                    <img src={comment} alt="postComment" id="subpostCommentIcon" />
+                    </span>
+                    </h3>
+                    <button>Okizeme</button>
+                    <p id="subpostTimestamp">Last post 4h ago</p>
+                    </div>
+                    <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
+                    <div id="subforumPostContent">
+                    <h3 id="subforumPostHead">Katalina's Okizeme Options
+                    <span>
+                    <img src={comment} alt="postComment" id="subpostCommentIcon" />
+                    </span>
+                    </h3>
                     <button>Okizeme</button>
                     <p id="subpostTimestamp">Last post 4h ago</p>
                     </div>

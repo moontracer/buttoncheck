@@ -7,7 +7,7 @@ function MobileNav(){
         <nav>
             <img src={menuIcon} id="navMenuMarker" alt="menuMarker" />
             <img src={gbvsLogo} id="navMainLogo" alt="siteLogo" />
-            <span id="loginContainer"><a href="#" id="navLogin">LOGIN</a></span>
+            <span id="loginContainer"><a href="http://www.google.com" id="navLogin">LOGIN</a></span>
         </nav>
     )
 }
