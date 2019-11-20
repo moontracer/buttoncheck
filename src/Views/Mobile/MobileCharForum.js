@@ -2,14 +2,16 @@ import React from 'react';
 import TestIcon from '../../images/TestIcon.png';
 import subforumPFPTest from '../../images/subforumPFPTest.png';
 import comment from '../../images/comment.png';
+import granblueBanner from '../../images/granblueBanner.png';
 
 class MobileCharForum extends React.Component {
     render(){
         return (
             <div>
                 <section id="sectionHeader">
-                <img src={TestIcon} alt="Subforum Char Logo" id="subforumLogo" />
-                <p id="sectionSubhead">Katalina Discussion</p>
+                {/* <img src={TestIcon} alt="Subforum Char Logo" id="subforumLogo" /> */}
+                {/* <p id="sectionSubhead">Katalina Discussion</p> */}
+                <img src={granblueBanner} alt="granblueGrass" id="subforumBanner" />
                 </section>
                 {/* Adding Create A Topic Button */}
                 <div id="subforumButtons">
