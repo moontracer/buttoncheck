@@ -26,4 +26,7 @@ export default App;
 /*
   Ideas:
   Move comments down the page.
+  
+  I think what's more important than letting users know when the last comment was is actually displaying to them how many comments there are.
+  So, let's try doing just that.
 */

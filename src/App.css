@@ -183,6 +183,10 @@ body {
             margin-top: 5%;
         }
         /* Testing */
+        #subpostCreator {
+            display: inline;
+            text-align: right;
+        }
         #subpostTimestamp {
             display: inline;
             text-align: right;

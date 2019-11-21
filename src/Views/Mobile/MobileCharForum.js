@@ -30,7 +30,8 @@ class MobileCharForum extends React.Component {
                     <h3 id="subforumPostHead">Katalina's Okizeme Options
                     </h3>
                     <button>Okizeme</button>
-                    <p id="subpostTimestamp">Last post 4h ago</p>
+                    <p id="subpostCreator"> Moontracer &#8226; </p>
+                    {/* <p id="subpostTimestamp">Last post 4h ago</p> */}
                     </div>
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
