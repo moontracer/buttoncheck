@@ -1,16 +1,13 @@
 import React from 'react';
-import TestIcon from '../../images/TestIcon.png';
 import subforumPFPTest from '../../images/subforumPFPTest.png';
-import comment from '../../images/comment.png';
 import granblueBanner from '../../images/granblueBanner.png';
+import { MessageCircle } from 'react-feather';
 
 class MobileCharForum extends React.Component {
     render(){
         return (
             <div>
-                <section id="sectionHeader">
-                {/* <img src={TestIcon} alt="Subforum Char Logo" id="subforumLogo" /> */}
-                {/* <p id="sectionSubhead">Katalina Discussion</p> */}
+                <section id="forumsectionHeader">
                 <img src={granblueBanner} alt="granblueGrass" id="subforumBanner" />
                 </section>
                 {/* Adding Create A Topic Button */}
@@ -25,34 +22,42 @@ class MobileCharForum extends React.Component {
                 </div>
                 {/* Section for Posts */}
                 <section id="subforumPostListing">
+                    <div className="subforumPostWrapper">
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
                     <h3 id="subforumPostHead">Katalina's Okizeme Options
                     </h3>
-                    <button>Okizeme</button>
+                    <button className="subforumPostTag">Okizeme</button>
                     <p id="subpostCreator"> Moontracer &#8226; </p>
-                    {/* <p id="subpostTimestamp">Last post 4h ago</p> */}
+                    <MessageCircle id="commentIcon" size={20} />
+                    <span> 190 </span>
                     </div>
+                    </div>
+                    <div className="subforumPostWrapper">
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
                     <h3 id="subforumPostHead">Katalina's Okizeme Options
                     </h3>
-                    <button>Okizeme</button>
-                    <p id="subpostTimestamp">Last post 4h ago</p>
+                    <button className="subforumPostTag">Okizeme</button>
                     </div>
+                    </div>
+                    <div className="subforumPostWrapper">
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
                     <h3 id="subforumPostHead">Katalina's Okizeme Options
                     </h3>
-                    <button>Okizeme</button>
+                    <button className="subforumPostTag">Okizeme</button>
                     <p id="subpostTimestamp">Last post 4h ago</p>
                     </div>
+                    </div>
+                    <div className="subforumPostWrapper">
                     <img src={subforumPFPTest} alt="Sub Post User Logo" id="subpostUserLogo" />
                     <div id="subforumPostContent">
                     <h3 id="subforumPostHead">Katalina's Okizeme Options
                     </h3>
-                    <button>Okizeme</button>
+                    <button className="subforumPostTag">Okizeme</button>
                     <p id="subpostTimestamp">Last post 4h ago</p>
+                    </div>
                     </div>
                 </section>
             </div>

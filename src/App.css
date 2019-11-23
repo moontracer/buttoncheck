@@ -76,7 +76,7 @@ body {
 }
 
 /* CSS FOR MOBILE CHARACTER FORUM: IMPORTANT! */
-#sectionHeader {
+#forumsectionHeader {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -160,7 +160,7 @@ body {
             /* font-size: 25px; */
             font-size: 1.8em;
         }
-        #sectionHeader {
+        #forumsectionHeader {
             /* margin-top: 3%; */
         }
         #subforumSelect {
@@ -170,6 +170,8 @@ body {
         #subforumCreateButton {
             font-size: 20px;
             width: 45%;
+            background-color: rgb(73, 165, 201);
+            color: white;
         }
         #subforumPostHead {
             /* margin-bottom: -7px; */
@@ -181,11 +183,17 @@ body {
         }
         #subforumPostListing {
             margin-top: 5%;
+            position: relative;
+            right: -35px;
         }
         /* Testing */
         #subpostCreator {
             display: inline;
             text-align: right;
+        }
+        #commentIcon {
+            position: relative;
+            bottom: -5px;
         }
         #subpostTimestamp {
             display: inline;
@@ -210,5 +218,18 @@ body {
         #subforumBanner {
             max-width: 100%;
             max-height: 100%;
+        }
+        .subforumPostWrapper {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+            width: fit-content;
+            height: fit-content;
+            display: inline-block;
+            margin-right: 0;
+        }
+        /* The issue has to do with the section's right margin */
+        /* Mobile forum tags that are used for buttons */
+        .subforumPostTag {
+            background-color:rgb(73, 165, 201);
+            color: white;
         }
     }
