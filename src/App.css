@@ -90,6 +90,10 @@ body {
 
 /* TODO: Add color for selected link */
 
+#signupLabel {
+    text-align: center;
+}
+
 /* IPhone 8 Plus Design */
 @media only screen
     and (device-width : 414px)
@@ -233,5 +237,18 @@ body {
         .subforumPostTag {
             background-color:rgb(73, 165, 201);
             color: white;
+        }
+        /* Registration page css!! */
+        .infoForm {
+            height: 73vh;
+            /* vh = viewport height */
+        }
+        .infoText {
+            font-size: 27px;
+            height: 60px;
+        }
+        .infoSubmit {
+            font-size: 30px;
+            
         }
     }
