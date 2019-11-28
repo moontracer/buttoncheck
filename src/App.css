@@ -94,6 +94,19 @@ body {
     text-align: center;
 }
 
+/* removing underline from unvisited footer link */
+
+#registerFooter:link {
+    text-decoration: none;
+    color: #59A4FF;
+}
+
+/* removing underline from visited footer link */
+#registerFooter:visited {
+    text-decoration: none;
+    color: #59A4FF;
+}
+
 /* IPhone 8 Plus Design */
 @media only screen
     and (device-width : 414px)

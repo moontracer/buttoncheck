@@ -2,9 +2,10 @@ import React from 'react';
 
 class MobileRegistration extends React.Component {
     render(){
+        // TO DO: Allow users to reveal passwords! (This can't be done on mobile though right)
         return (
             <div className="infoForm">
-            <h1 id="signupLabel">Create an Account</h1>
+            <h1 id="signupLabel">Become a Skyfarer</h1>
             <form method="POST">
                 {/* infoText is Not A Great Name */}
                 {/* Uses html labels for Username, Email, Pass, and Pronouns. 
@@ -20,10 +21,12 @@ class MobileRegistration extends React.Component {
                 <p>Your email address won't be given to anyone.</p>
                 <label htmlFor="registerPronouns">Pronouns</label>
                 <input className="infoText" type="text" name="pronouns" id="registerPronouns" /> 
-                <p>Please list your pronouns here! <strong>Users that register with joke pronouns will be banned.</strong></p>
+                <p>Please list your pronouns here!</p>
                 {/* Submit button needs an onchange handler*/}
                 <input type="Submit" className="infoSubmit" value="Register" />
             </form>
+            {/* Revisit this. Target blank is supported by React Router! */}
+            <footer>By registering, you agree to the <a href="https://www.google.com" id="registerFooter">forum rules and policies.</a></footer>
             </div>
         )
     }
