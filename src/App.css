@@ -117,9 +117,19 @@ body {
 #navSideMenuShow {
     display: unset;
     /* Check and see how this works on all devices! */
+    position: fixed;
+    /* This positioning is what positions the list above everything else. Makes me wonder if the div is really necessary,
+    look into this later on!
+    */
 }
 #navSideMenuHide {
     display: none;
+}
+
+/* More animation setings for menu, WIP Settings besides list-style-type */
+
+.navSideMenu li {
+    list-style-type: none;
 }
 
 /* IPhone 8 Plus Design */

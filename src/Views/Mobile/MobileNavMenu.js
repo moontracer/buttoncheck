@@ -2,6 +2,7 @@ import React from 'react';
 
 function MobileNavMenu(props){
     return (
+        <div className="navSideMenu">
         <ul id={props.menuActivated ? "navSideMenuShow" : "navSideMenuHide"}>
             <li>Katalina</li>
             <li>Zeta</li>
@@ -9,6 +10,7 @@ function MobileNavMenu(props){
             <li>Metera</li>
             <li>Ferry</li>
         </ul>
+        </div>
     );
 }
 
