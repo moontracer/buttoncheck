@@ -107,6 +107,11 @@ body {
     color: #59A4FF;
 }
 
+/* CSS ANIMATION SETTINGS */
+#navSideMenu {
+    display: none;
+}
+
 /* IPhone 8 Plus Design */
 @media only screen
     and (device-width : 414px)
@@ -262,6 +267,10 @@ body {
         }
         .infoSubmit {
             font-size: 30px;
-            
+        }
+        /* CSS Animation Settings */
+        #navMenuX {
+            font-size: 1.16em;
+            display: none;
         }
     }
