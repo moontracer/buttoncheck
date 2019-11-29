@@ -12,18 +12,21 @@ class MobileNav extends React.Component {
         this.menuToggle = this.menuToggle.bind(this);
     }
     menuToggle(){
-        // When the user first clicks the menu icon
-        //Setting state of menu from false to true
+        // When the user first clicks the menu icon, this changes the state of the menu
         this.setState({
             menuActivated: !this.state.menuActivated
-        });
-        console.log(this.state.menuActivated);
+        },
+        //this callback prints the state after the state is set
+        () => {
+            console.log(this.state.menuActivated);
+        }
+        );
     }
     render(){
         return (
             <nav>
-                <img src={menuIcon} id="navMenuMarker" alt="menuMarker" onClick={this.menuToggle} />
-                <h3 id="navMenuX">X</h3>
+                <img src={menuIcon} id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} />
+                <h3 id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle}>X</h3>
                 <img src={gbvsLogo} id="navMainLogo" alt="siteLogo" />
                 <span id="loginContainer"><a href="http://www.google.com" id="navLogin">LOGIN</a></span>
                 <ul id="navSideMenu">
