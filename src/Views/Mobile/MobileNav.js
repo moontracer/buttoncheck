@@ -29,13 +29,16 @@ class MobileNav extends React.Component {
                 <h3 id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle}>X</h3>
                 <img src={gbvsLogo} id="navMainLogo" alt="siteLogo" />
                 <span id="loginContainer"><a href="http://www.google.com" id="navLogin">LOGIN</a></span>
-                <ul id="navSideMenu">
+                {/* NOTES ON WORKAROUND:
+                        The menu div itself and its contents will have to be in another component and have its props passed down to the element.
+                */}
+                {/* <ul id={this.state.menuActivated ? "navSideMenuShow" : "navSideMenuHide"}>
                     <li>Katalina</li>
                     <li>Metera</li>
                     <li>Zeta</li>
                     <li>Gran</li>
                     <li>Percival</li>
-                </ul>
+                </ul> */}
             </nav>
         )
     }

@@ -108,13 +108,17 @@ body {
 }
 
 /* CSS ANIMATION SETTINGS */
-#navSideMenu {
-    display: none;
-}
 #navMenuMarkerHidden {
     display: none;
 }
 #navMenuXHidden {
+    display: none;
+}
+#navSideMenuShow {
+    display: unset;
+    /* Check and see how this works on all devices! */
+}
+#navSideMenuHide {
     display: none;
 }
 
