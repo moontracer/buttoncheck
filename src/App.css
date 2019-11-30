@@ -114,34 +114,31 @@ body {
 #navMenuXHidden {
     display: none;
 }
-#navSideMenuShow li {
-    display: unset;
-    /* Check and see how this works on all devices! */
-    /* position: fixed; */
-    /* This positioning is what positions the list above everything else.
-       Below this is more animation settings for menu, WIP Settings.
-    */
+
+/* Use flexbox more */
+/* Try using just the ul for this stuff */
+#navSideMenuShow {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    /* padding here? hmm... */
     animation-duration: 1s;
     animation-name: displayMenu;
 }
 
+
 @keyframes displayMenu {
     from {
-        margin-right: 100%;
-        width: 300%;
+        margin-left: 0%;
     }
     to {
-        margin-right: 0%;
-        width: 100%;
+        margin-left: 8%;
+        /* add padding?  */
     }
 }
 
 #navSideMenuHide {
     display: none;
-}
-
-li {
-    padding: 3%;
 }
 
 /* IPhone 8 Plus Design */
