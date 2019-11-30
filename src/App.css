@@ -140,6 +140,10 @@ body {
     display: none;
 }
 
+li {
+    padding: 3%;
+}
+
 /* IPhone 8 Plus Design */
 @media only screen
     and (device-width : 414px)
