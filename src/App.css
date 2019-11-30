@@ -117,28 +117,38 @@ body {
 
 /* Use flexbox more */
 /* Try using just the ul for this stuff */
-#navSideMenuShow {
-    display: flex;
-    flex-direction: column;
+.navSideMenuShow {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* Let's check and see if it needs flexbox */
+    position: absolute;
+    background-color: pink;
     list-style-type: none;
-    /* padding here? hmm... */
-    animation-duration: 1s;
-    animation-name: displayMenu;
+    z-index: 10;
+    top: 7%;
+    width: 55%;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in;
 }
 
+/* transform allows you to translate the element. go with translateX, as that's all you need.
+        negative x axis translation -> menu is out of view entirely, slide back to 0.
+    this is the property that the transition is going to animate
+    TLDR: css transitions animate any changes made to css properties
 
-@keyframes displayMenu {
-    from {
-        margin-left: 0%;
-    }
-    to {
-        margin-left: 8%;
-        /* add padding?  */
-    }
+*/
+
+.navSideMenuItem {
+    margin-bottom: 20px;
 }
 
-#navSideMenuHide {
-    display: none;
+#navSideMenuHead {
+    margin-top: 20px;
+}
+
+.navSideMenuHide {
+    position: absolute;
+    transform: translateX(-220px);
 }
 
 /* IPhone 8 Plus Design */
