@@ -151,6 +151,12 @@ body {
     transform: translateX(-220px);
 }
 
+/* CSS Resize Test */
+.resizeTest {
+    width: 50px;
+    height: 50px;
+}
+
 /* IPhone 8 Plus Design */
 @media only screen
     and (device-width : 414px)
@@ -221,9 +227,6 @@ body {
             /* font-size: 25px; */
             font-size: 1.8em;
         }
-        #forumsectionHeader {
-            /* margin-top: 3%; */
-        }
         #subforumSelect {
             font-size: 18px;
             /* CHANGE THIS TO EM LATER ON */
@@ -233,10 +236,6 @@ body {
             width: 45%;
             background-color: rgb(73, 165, 201);
             color: white;
-        }
-        #subforumPostHead {
-            /* margin-bottom: -7px; */
-            /* Change from pixels to another measurement, negative margin here isn't bad practice */
         }
         #subpostUserLogo {
             width: 18%;
