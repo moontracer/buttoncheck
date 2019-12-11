@@ -300,14 +300,41 @@ body {
             /* vh = viewport height */
         }
         .infoText {
-            font-size: 27px;
-            height: 60px;
+            font-size: 19px;
+            height: 25px;
+        }
+        /* Increasing left and right margin of labels */
+        .registrationLabel {
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        /* Increasing left margin of descriptions */
+        .registerInfo {
+            margin-left: 3%;
         }
         .infoSubmit {
             font-size: 30px;
+            /* Centering the register button */
+            display: block;
+            margin: 0 auto;
+        }
+        /* Adding space between the form and the footer  */
+        form {
+            margin-bottom: 5%;
+        }
+        footer {
+            margin-left: 3%;
         }
         /* CSS Animation Settings */
         #navMenuX {
             font-size: 1.16em;
         }
+        /* Testing transparent nav idea! */
+        /* nav {
+            background: none;
+            position: fixed;
+        }
+        #navLogin {
+            color: white;
+        } */
     }
