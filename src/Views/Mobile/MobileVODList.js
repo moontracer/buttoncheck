@@ -3,7 +3,7 @@ import subforumPFPTest from '../../images/subforumPFPTest.png';
 import granblueBanner from '../../images/granblueBanner.png';
 import { MessageCircle } from 'react-feather';
 
-class MobileCharForum extends React.Component {
+class MobileVODList extends React.Component {
     render(){
         return (
             <div>
@@ -65,4 +65,4 @@ class MobileCharForum extends React.Component {
     }
 }
 
-export default MobileCharForum;
+export default MobileVODList;

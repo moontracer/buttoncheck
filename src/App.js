@@ -5,7 +5,8 @@ import MobileNav from './Views/Mobile/MobileNav.js';
 // import MobileCharInfo from './Views/Mobile/MobileCharInfo.js';
 // import MobileQuestions from './Views/Mobile/MobileQuestions.js';
 import MobileRegistration from './Views/Mobile/MobileRegistration.js';
-// import MobileCharForum from './Views/Mobile/MobileCharForum';
+import MobileVODList from './Views/Mobile/MobileVODList';
+import MobileVODFilter from './Views/Mobile/MobileVODFilter';
 
 function App() {
   return (
@@ -15,9 +16,10 @@ function App() {
       {/* <MobileQuestions /> */}
       {/* <MobileCharHeader /> */}
       {/* <MobileCharInfo /> */}
-      <MobileRegistration />
+      {/* <MobileRegistration /> */}
       {/* Mobile character forum basically finished, working on registration now */}
-      {/* <MobileCharForum /> */}
+      <MobileVODFilter />
+      <MobileVODList />
     </div>
   );
 }

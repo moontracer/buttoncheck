@@ -25,6 +25,22 @@
     text-decoration: none;
 }
 
+/* removing underline from header */
+#skyboundHeader:link {
+    text-decoration: none;
+}
+
+/* removing underline and color from visited link */
+#skyboundHeader:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* setting header default color */
+#skyboundHeader {
+    color: white;
+}
+
 /* Setting nav as flex */
 nav {
     display: flex;
