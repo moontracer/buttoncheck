@@ -18,7 +18,7 @@ function App() {
       {/* <MobileCharInfo /> */}
       {/* <MobileRegistration /> */}
       {/* Mobile character forum basically finished, working on registration now */}
-      {/* <MobileVODFilter /> */}
+      <MobileVODFilter />
       <MobileVODList />
     </div>
   );
