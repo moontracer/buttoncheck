@@ -353,4 +353,14 @@ body {
         #navLogin {
             color: white;
         } */
+        #filterVS {
+            text-align: center;
+        }
+        /* limiting the size of the dropdown container */
+        .characterContainer {
+            height: 8%;
+        }
+        .dropdownImg {
+            width: 10%;
+        }
     }
