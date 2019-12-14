@@ -71,17 +71,21 @@ class MobileVODList extends React.Component {
                     <div className="VODInfo">
                     <Star className="VODStar" color="coral" />
                     <a className="VODPlayerName">
-                    <img className="VODInfoImg" src={zeta} alt="zeta" />
                     Noir
+                    <img className="VODInfoImg" src={zeta} alt="zeta" />
                     </a>
-                    {/* <p>vs</p> */}
+                    <p>vs</p>
                     <a className="VODPlayerName">
                     <img className="VODInfoImg" src={katalina} alt="katalina" />
                     Moon
                     </a>
                     </div>
                 </section>
+                {/* Current qualm: Zeta and Kat belong to the same class but why does this image have
+                    less width than the other one?
 
+                    Name image versus image name
+                */}
             </div>
         )
     }
