@@ -371,4 +371,38 @@ body {
         #firstFilter {
             margin-left: 5%;
         }
+        .filterImg {
+            width: 16%;
+        }
+        .filterCharacters {
+            display: flex;
+            flex-direction: column;
+            /* align-content: center; */
+            /* align-content: center; */
+        }
+        .filterCharName, .VODPlayerName {
+            display: flex;
+            align-items: center;
+        }
+        /* VODLink CSS */
+        .VODLink {
+            color: #6494C7;
+        }
+        
+        .VODLink:visited {
+            color: #6494C7;
+        }
+        
+        .VODLink:link {
+            text-decoration: none;
+        }
+        .VODInfo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .VODInfoImg {
+            width: 35%;
+        }
     }
