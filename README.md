@@ -67,12 +67,18 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-### Thoughts
+### Things to work on:
 
-I couldn't find a version of the GBVS Logo that was labeled for reuse with modification. Should I still use it?
+considering removing the justify-content and
+setting up a margin-left but it heavily depends
+on the amount of content that ends up in this div and how
+flexbox handles it
 
-I did find a menu icon that was properly labeled though.
+set parent width aka width of <a> to the width of the child element,
+<img>
 
-TO DO:
-Add functionality to menu button and Login button
-Add text shadowing around character names
+actually, is there even a reason to do this?
+can't i actually just assign an onclick event
+to the react image? ask someone about this.
+
+reduce space between elements in flexbox
