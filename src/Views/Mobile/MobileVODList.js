@@ -2,8 +2,9 @@ import React from 'react';
 import subforumPFPTest from '../../images/subforumPFPTest.png';
 import granblueBanner from '../../images/granblueBanner.png';
 import { MessageCircle, Star } from 'react-feather';
-import zeta from '../../charImages/zeta.png';
+import metera from '../../charImages/metera.png';
 import katalina from '../../charImages/katalina.png';
+import MobileVODFilter from './MobileVODFilter.js';
 
 class MobileVODList extends React.Component {
     render(){
@@ -12,8 +13,10 @@ class MobileVODList extends React.Component {
                 <section id="forumsectionHeader">
                 <img src={granblueBanner} alt="granblueGrass" id="subforumBanner" />
                 </section>
+                <MobileVODFilter />
                 {/* Adding Create A Topic Button */}
-                <div id="subforumButtons">
+
+                {/* <div id="subforumButtons">
                 <button id="subforumCreateButton">Create Topic</button>
                 <select id="subforumSelect">
                     <option defaultValue="Selected">Please Select A Tag:</option>
@@ -21,7 +24,7 @@ class MobileVODList extends React.Component {
                     <option value="Mixups">Mixups</option>
                     <option value="Okizeme">Okizeme</option>
                 </select>
-                </div>
+                </div> */}
                 {/* Section for Posts */}
 
                 {/* <section id="subforumPostListing">
@@ -67,16 +70,20 @@ class MobileVODList extends React.Component {
                 {/* Formatting style for VODs! */}
 
                 <section>
-                    <h3><a href="#" className="VODLink">Evolution 2020 Top 8 - Grand Finals</a></h3>
+                    <h3 className="VODEventTitle"><a href="#" className="VODLink">Evolution 2020 Top 8 - Grand Finals</a></h3>
                     <div className="VODInfo">
                     <Star className="VODStar" color="coral" />
                     <a className="VODPlayerName">
                     Noir
-                    <img className="VODInfoImg" src={zeta} alt="zeta" />
+                    </a>
+                    <a>
+                    <img className="VODInfoImg" src={metera} alt="metera" />
                     </a>
                     <p>vs</p>
-                    <a className="VODPlayerName">
+                    <a>
                     <img className="VODInfoImg" src={katalina} alt="katalina" />
+                    </a>
+                    <a className="VODPlayerName">
                     Moon
                     </a>
                     </div>

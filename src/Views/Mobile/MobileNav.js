@@ -26,7 +26,7 @@ class MobileNav extends React.Component {
     }
     render(){
         return (
-            <div>
+            <div id="quickcssTest">
             {/* <nav>
                 <img src={menuIcon} id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} />
                 <h3 id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle}>X</h3>
@@ -35,11 +35,11 @@ class MobileNav extends React.Component {
             </nav> */}
             <nav>
                 <span><a href="#" id="skyboundHeader">SKYBOUND ARTS</a></span>
-                <PlusSquare color="rgba(255, 255, 255, 0.6)" />
+                <PlusSquare color="rgba(255, 255, 255, 1)" />
                 {/* <img src={menuIcon} id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} /> */}
-                <Menu id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} />
+                <Menu color="white" id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} />
                 {/* <h3 id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle}>X</h3> */}
-                <X id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle} />
+                <X color="white" id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle} />
             </nav>
             <MobileNavMenu menuActivated={this.state.menuActivated} />
             </div>
