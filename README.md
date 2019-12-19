@@ -81,4 +81,6 @@ actually, is there even a reason to do this?
 can't i actually just assign an onclick event
 to the react image? ask someone about this.
 
+NVM! I'M GOING TO USE REACT-ROUTER ANYWAYS! SET IT UP TOMORROW!
+
 reduce space between elements in flexbox

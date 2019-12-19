@@ -72,12 +72,13 @@ class MobileVODList extends React.Component {
                 <section>
                     <h3 className="VODEventTitle"><a href="#" className="VODLink">Evolution 2020 Top 8 - Grand Finals</a></h3>
                     <div className="VODInfo">
-                    <Star className="VODStar" color="coral" />
-                    <a className="VODPlayerName">
+                    {/* <a className="VODPlayerName">
                     Noir
                     </a>
-                    <a>
+                    <a className="fixA">
+                    <div>
                     <img className="VODInfoImg" src={metera} alt="metera" />
+                    </div>
                     </a>
                     <p>vs</p>
                     <a>
@@ -85,7 +86,13 @@ class MobileVODList extends React.Component {
                     </a>
                     <a className="VODPlayerName">
                     Moon
-                    </a>
+                    </a> */}
+                    <img className="VODInfoImg" src={metera} alt="metera" />
+                    <p>Moon</p>
+                    </div>
+                    <div className="VODInfo">
+                    <img className="VODInfoImg" src={katalina} alt="katalina" />
+                    <p>Noir</p>
                     </div>
                 </section>
                 {/* Current qualm: Zeta and Kat belong to the same class but why does this image have
