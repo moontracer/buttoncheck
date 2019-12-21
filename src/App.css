@@ -410,11 +410,12 @@ body {
         .VODInfo {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            /* justify-content: center; */
             align-items: center;
         }
         .VODInfoImg {
             width: 14%;
+            margin-left: 3%;
         }
         /* #quickcssTest {
             position: fixed;
@@ -475,5 +476,21 @@ body {
         }
         .VODPlayerName {
             font-size: 18px;
+        }
+        .VODIcon {
+            margin-left: auto;
+        }
+        .VODPlayer {
+            margin-left: 2%;
+            font-size: 18px;
+        }
+        .VODContainer {
+            border-bottom: 1px solid #6494C7;
+        }
+        .VODPlayButton {
+            align-self: center;
+        }
+        .VODReportButton {
+            align-self: flex-start;
         }
     }

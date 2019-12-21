@@ -1,7 +1,7 @@
 import React from 'react';
 import subforumPFPTest from '../../images/subforumPFPTest.png';
 import granblueBanner from '../../images/granblueBanner.png';
-import { MessageCircle, Star } from 'react-feather';
+import { MessageCircle, Star, PlayCircle, AlertCircle } from 'react-feather';
 import metera from '../../charImages/metera.png';
 import katalina from '../../charImages/katalina.png';
 import MobileVODFilter from './MobileVODFilter.js';
@@ -71,6 +71,8 @@ class MobileVODList extends React.Component {
 
                 <section>
                     <h3 className="VODEventTitle"><a href="#" className="VODLink">Evolution 2020 Top 8 - Grand Finals</a></h3>
+                    {/* VOD Container */}
+                    <div className="VODContainer">
                     <div className="VODInfo">
                     {/* <a className="VODPlayerName">
                     Noir
@@ -88,11 +90,14 @@ class MobileVODList extends React.Component {
                     Moon
                     </a> */}
                     <img className="VODInfoImg" src={metera} alt="metera" />
-                    <p>Moon</p>
+                    <p className="VODPlayer">Moon</p>
+                    <PlayCircle className="VODIcon VODPlayButton" size={32} />
                     </div>
                     <div className="VODInfo">
                     <img className="VODInfoImg" src={katalina} alt="katalina" />
-                    <p>Noir</p>
+                    <p className="VODPlayer">Noir</p>
+                    <AlertCircle className="VODIcon VODReportButton" size={32} />
+                    </div>
                     </div>
                 </section>
                 {/* Current qualm: Zeta and Kat belong to the same class but why does this image have
