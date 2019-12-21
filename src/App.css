@@ -135,17 +135,18 @@ body {
 /* Use flexbox more */
 /* Try using just the ul for this stuff */
 .navSideMenuShow {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* Let's check and see if it needs flexbox */
     position: absolute;
-    background-color: pink;
+    background-color: #f5f5f5;
     list-style-type: none;
-    z-index: 10;
-    top: 7%;
-    width: 55%;
-    transform: translateX(0);
-    transition: transform 0.5s ease-in;
+    top: 1.1%;
+    /* Is this okay? */
+    left: 63%;
+    width: 21%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
 }
 
 /* transform allows you to translate the element. go with translateX, as that's all you need.
@@ -156,16 +157,16 @@ body {
 */
 
 .navSideMenuItem {
-    margin-bottom: 20px;
+    margin-bottom: 6%;
 }
 
 #navSideMenuHead {
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .navSideMenuHide {
     position: absolute;
-    transform: translateX(-220px);
+    opacity: 0;
 }
 
 /* CSS Resize Test */
@@ -492,5 +493,13 @@ body {
         }
         .VODReportButton {
             align-self: flex-start;
+        }
+        .filterDropdown {
+            background-color: #E2EDEE;
+            border: 1px solid black;
+            width: 25%;
+        }
+        #EventDropdown {
+            margin-right: 2%;
         }
     }

@@ -116,12 +116,12 @@ class MobileVODFilter extends React.Component {
                         Player 2 {this.state.filter2Opened ? <ChevronUp /> : <ChevronDown />}
                     </a>
                     {/* Make this a searchable dropdown!!! */}
-                    <select>
+                    <select className="filterDropdown" id="EventDropdown">
                         <option selected>Event</option>
                         <option>Michigan Masters 2020</option>
                         <option>Combo Breaker 2020</option>
                     </select>
-                    <select>
+                    <select className="filterDropdown">
                     <option selected>Winner</option>
                     <option>Player 1</option>
                     <option>Player 2</option>
