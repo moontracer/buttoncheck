@@ -1,6 +1,4 @@
 import React from 'react';
-import gbvsLogo from '../../images/gbvsLogo.png';
-import menuIcon from '../../images/menuIcon.png';
 import MobileNavMenu from './MobileNavMenu.js';
 import { PlusSquare, Menu, X } from 'react-feather';
 
@@ -26,19 +24,11 @@ class MobileNav extends React.Component {
     }
     render(){
         return (
-            <div id="quickcssTest">
-            {/* <nav>
-                <img src={menuIcon} id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} />
-                <h3 id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle}>X</h3>
-                <img src={gbvsLogo} id="navMainLogo" alt="siteLogo" />
-                <span id="loginContainer"><a href="http://www.google.com" id="navLogin">LOGIN</a></span>
-            </nav> */}
+            <div>
             <nav>
                 <span><a href="#" id="skyboundHeader">SKYBOUND ARTS</a></span>
                 <PlusSquare color="rgba(255, 255, 255, 1)" />
-                {/* <img src={menuIcon} id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} /> */}
                 <Menu color="white" id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} />
-                {/* <h3 id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle}>X</h3> */}
                 <X color="white" id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle} />
             </nav>
             <MobileNavMenu menuActivated={this.state.menuActivated} />

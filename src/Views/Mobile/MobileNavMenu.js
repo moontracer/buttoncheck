@@ -1,5 +1,4 @@
 import React from 'react';
-import subforumPFPTest from '../../images/subforumPFPTest.png';
 
 function MobileNavMenu(props){
     return (
