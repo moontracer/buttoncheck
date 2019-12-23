@@ -84,3 +84,12 @@ to the react image? ask someone about this.
 NVM! I'M GOING TO USE REACT-ROUTER ANYWAYS! SET IT UP TOMORROW!
 
 reduce space between elements in flexbox
+
+### WEBSITE CHECKLIST
+Registration Page = Figure out why button color is different on mobile than Chrome!
+    For mobile "you agree to the rules" - add a modal which contains the rules of the webpage!
+        Let's think about this one for a sec. How would I write a modal? The way I'm thinking about it is something like this:
+        On click, a fixed div displays which contains the rules. The div is displayed until the user hits the X which closes the div. (I gotta do this after I clean up the app folders and whatnot!)
+Let's revisit the main view and see what else needs to be made.
+
+Login View - I don't have that yet! Let's do that right now.

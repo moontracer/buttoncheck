@@ -335,6 +335,8 @@ body {
             /* Centering the register button */
             display: block;
             margin: 0 auto;
+            color: black;
+            background-color: #B2CFD2;
         }
         /* Adding space between the form and the footer  */
         form {
@@ -501,5 +503,37 @@ body {
         }
         #EventDropdown {
             margin-right: 2%;
+        }
+        /* Sign-In Form CSS */
+        #SignInContainer {
+            height: 50vh;
+            padding: 4vw;
+        }
+        #SignInHeader {
+            text-align: center;
+        }
+        .SignInField {
+            font-size: 19px;
+            height: 25px;
+            display: block;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        #SignInSubmit {
+            font-size: 30px;
+            /* Centering the sign in button */
+            display: block;
+            margin: 0 auto;
+            color: black;
+            background-color: #B2CFD2;
+            width: 40%;
+        }
+        #RegisterRedirect {
+            font-size: 30px;
+            display: block;
+            margin: 0 auto;
+            color: black;
+            width: 40%;
+            background-color: #82b1b6;
         }
     }

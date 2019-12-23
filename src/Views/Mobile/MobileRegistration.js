@@ -1,4 +1,5 @@
 import React from 'react';
+import MobileRulesModal from './MobileRulesModal';
 
 class MobileRegistration extends React.Component {
     render(){
@@ -23,7 +24,8 @@ class MobileRegistration extends React.Component {
                 <input type="Submit" className="infoSubmit" value="Register" />
             </form>
             {/* Revisit this. Target blank is supported by React Router! */}
-            <footer>By registering, you agree to the  <a href="https://www.google.com" id="registerFooter">rules and policies of Skybound Arts.</a></footer>
+            <footer>By registering, you agree to the  <a className="test" id="registerFooter">rules and policies of Skybound Arts.</a></footer>
+            <MobileRulesModal />
             </div>
         )
     }

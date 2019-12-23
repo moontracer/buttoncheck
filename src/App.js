@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
-import MobileNav from './Views/Mobile/MobileNav.js';
+// import MobileNav from './Views/Mobile/MobileNav.js';
 // import MobileCharHeader from './Views/Mobile/MobileCharHeader.js';
 // import MobileCharInfo from './Views/Mobile/MobileCharInfo.js';
 // import MobileQuestions from './Views/Mobile/MobileQuestions.js';
 import MobileRegistration from './Views/Mobile/MobileRegistration.js';
-import MobileVODList from './Views/Mobile/MobileVODList';
+import MobileSignIn from './Views/Mobile/MobileSignIn';
+// import MobileVODList from './Views/Mobile/MobileVODList';
 // import MobileVODFilter from './Views/Mobile/MobileVODFilter';
 
 function App() {
   return (
     <div className="App">
-      <MobileNav />
+      {/* <MobileNav /> */}
       {/* The character overview page content here, working on Q&A page atm */}
       {/* <MobileQuestions /> */}
       {/* <MobileCharHeader /> */}
@@ -19,7 +20,8 @@ function App() {
       {/* <MobileRegistration /> */}
       {/* Mobile character forum basically finished, working on registration now */}
       {/* <MobileVODFilter /> */}
-      <MobileVODList />
+      {/* <MobileVODList /> */}
+      <MobileSignIn />
     </div>
   );
 }
