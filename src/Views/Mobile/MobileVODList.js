@@ -4,8 +4,31 @@ import { PlayCircle, AlertCircle } from 'react-feather';
 import metera from '../../charImages/metera.png';
 import katalina from '../../charImages/katalina.png';
 import MobileVODFilter from './MobileVODFilter.js';
+import MobileReportModal from './MobileReportModal.js';
 
 class MobileVODList extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            reportOpen: false
+        };
+        this.openReport = this.openReport.bind(this);
+        this.closeReport = this.closeReport.bind(this);
+    }
+    openReport(){
+        this.setState({
+            reportOpen: !this.state.reportOpen},
+        () => {console.log(this.state.reportOpen);
+        }
+        );
+    }
+    closeReport(){
+        this.setState({reportOpen: !this.state.reportOpen},
+        () => {
+            console.log(this.state.reportOpen);
+        }    
+        );
+    }
     render(){
         return (
             <div>
@@ -25,10 +48,13 @@ class MobileVODList extends React.Component {
                     <div className="VODInfo">
                     <img className="VODInfoImg" src={katalina} alt="katalina" />
                     <p className="VODPlayer">Noir</p>
-                    <AlertCircle className="VODIcon VODReportButton" size={32} />
+                    <AlertCircle className="VODIcon VODReportButton" size={32}
+                     onClick={this.openReport}
+                    />
                     </div>
                     </div>
                 </section>
+                <MobileReportModal reportOpen={this.state.reportOpen} />
             </div>
         )
     }

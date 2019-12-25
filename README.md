@@ -211,3 +211,8 @@ That's all the front-end changes that I need to make!!!
 For starters, let's figure out how to make a modal.
 
 That's one of today's goals!
+
+Modal = current WIP (Ask Kris how it goes!)
+
+Clean up the Nav next (everything besides Add View)
+Then do Player 2 Functionality and Link Association

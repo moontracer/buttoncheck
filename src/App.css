@@ -378,4 +378,17 @@ body {
             width: 40%;
             background-color: #82b1b6;
         }
+        .showModal {
+            position: absolute;
+            z-index: 100;
+            top: 22%;
+            left: 5%;
+            right: 5%;
+            width: auto;
+            border: 1px solid gray;
+            border-radius: 2%;
+        }
+        .hideModal {
+            display: none;
+        }
     }
