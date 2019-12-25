@@ -1,23 +1,20 @@
 import React from 'react';
 import './App.css';
-// import MobileNav from './Views/Mobile/MobileNav.js';
-// import MobileQuestions from './Views/Mobile/MobileQuestions.js';
-import MobileRegistration from './Views/Mobile/MobileRegistration.js';
-import MobileSignIn from './Views/Mobile/MobileSignIn';
-// import MobileVODList from './Views/Mobile/MobileVODList';
+import MobileNav from './Views/Mobile/MobileNav.js';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+// import MobileRegistration from './Views/Mobile/MobileRegistration.js';
+// import MobileSignIn from './Views/Mobile/MobileSignIn';
+import MobileVODList from './Views/Mobile/MobileVODList';
 // import MobileVODFilter from './Views/Mobile/MobileVODFilter';
 
 function App() {
   return (
     <div className="App">
-      {/* <MobileNav /> */}
-      {/* The character overview page content here, working on Q&A page atm */}
-      {/* <MobileQuestions /> */}
-      {/* <MobileRegistration /> */}
-      {/* Mobile character forum basically finished, working on registration now */}
+      {/* Nav will be on every page for now. */}
+      <MobileNav />
       {/* <MobileVODFilter /> */}
-      {/* <MobileVODList /> */}
-      <MobileSignIn />
+      <MobileVODList />
+      {/* <MobileSignIn /> */}
     </div>
   );
 }

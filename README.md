@@ -93,3 +93,121 @@ Registration Page = Figure out why button color is different on mobile than Chro
 Let's revisit the main view and see what else needs to be made.
 
 Login View - I don't have that yet! Let's do that right now.
+
+React-Router-Dom Info:
+
+Dynamic browser rendering - React Router keeps the URL up to date
+as you navigate.
+
+Router - renders the matching Route based on the Link that is pressed.
+
+Switches look through the children Route elements and renders the one
+whose path matches the URL. Switch is best used for multiple routes that you want to render once at a time.
+
+React Router
+--
+Dynamically loaded pages that don't refresh
+
+About component, Shop component, MainPage component, and a Nav component
+
+from App.js, import everything! (About, Nav, etc.)
+
+without react router: for example, if you do:
+Nav
+About
+Shop
+
+all of these components will be rendered but this isn't what you want.
+What you want is for the component rendered to change depending on the route.
+
+with react router:
+
+you want to import BrowserRouter, Switch, and Route in the app.js
+
+browserRouter allows you to handle routing, wrap any component you want routing functionality for in there
+
+have router surround everything
+<Router>
+    <div>
+    <Nav />
+    <Route path="/about" component={About} />
+    </div>
+</Router>
+
+now, if you go to the route you'll see the components rendered.
+
+In an instance where you have a route for "/" but don't setup an exact path, if you have two routes like "/" and "/about", the homepage component will render on "/about" still.
+
+When wrapped around a bunch of routes, the Switch will only render the first component that matches the URL. So for "/", "/about", and "/shop" if you enter "/about", "/" will be the component that is rendered.
+
+If you use the exact keywords, it means that the component will only render when that path is exact.
+
+In your nav - instead of <a> tag, you're going to import Link from
+react-router-dom.
+
+Wrap the <Link around the <li> and use the to parameter to specify
+the route.
+
+add styling for the <Link> too!
+
+Creating dynamic routes!!!
+
+Shop
+with {useState} and {useEffect} from 'react'
+    state holds API information
+    effect runs fetch call after mount 
+
+    when writing a fetch function, you can write an async function
+    
+    why would you use useState and/or useEffect instead of componentDidMount?
+
+    <Route path="/shop/:id" />
+    
+
+Think about the app routing!
+
+
+--
+Alright, let's think about how we want to structure and organize this application and its routes. We have to make a checklist of everything I need to add and what
+I need to work on.
+
+We're going to start from top to bottom, first starting out with the navbar.
+
+Skybound Arts      +      Menu
+
+Menu contains Register, Sign In, and About.
+
+I want to create my own form of of registration. I think it'd be nice because it'd give me more freedom and flexibility when it comes to things that I can use when creating users, etc.
+
+---
+So for the Nav view, I need to do the following:
+
+Make Skybound Arts a <Link to ="/">
+
+DECIDE ON PLUS VIEW (EVENTUALLY)
+
+Make Register, Sign In, and About Link to's. I think it'd be better to have About as a full page rather than as a Modal.
+
+Perhaps it'd be best to rename About as Rules because that's what it attempts to do.
+
+On second thought, I really think that the Modal would be necessary.
+
+That's it for this part of the app!
+---
+For the VOD List view, I need to do the following:
+
+Fix characters dropdown
+Add player 2 functionality
+Add Link association with
+    Characters (Clicking on image based on character dynamically routes to a character link containing all the character's VODs)
+    Players (Clicking on player name dynamically routes to a player link containing all the player's VODs)
+    Event Name (Clicking on the Event Name dynamically routes to a link containing all the VODs from the event)
+    Link association with PlayButton - PlayButton links to timestamped VOD
+Report Modal
+
+--
+That's all the front-end changes that I need to make!!!
+
+For starters, let's figure out how to make a modal.
+
+That's one of today's goals!
