@@ -1,6 +1,7 @@
 import React from 'react';
 import MobileNavMenu from './MobileNavMenu.js';
 import { PlusSquare, Menu, X } from 'react-feather';
+import {Link} from 'react-router-dom';
 
 class MobileNav extends React.Component {
     constructor(props){
@@ -26,7 +27,7 @@ class MobileNav extends React.Component {
         return (
             <div>
             <nav>
-                <span><a href="#" id="skyboundHeader">SKYBOUND ARTS</a></span>
+                <Link to="/" id="skyboundHeader"><span>SKYBOUND ARTS</span></Link>
                 <PlusSquare color="rgba(255, 255, 255, 1)" />
                 <Menu color="white" id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} />
                 <X color="white" id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle} />

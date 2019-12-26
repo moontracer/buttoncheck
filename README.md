@@ -200,6 +200,7 @@ Fix characters dropdown
 Add player 2 functionality
 Add Link association with
     Characters (Clicking on image based on character dynamically routes to a character link containing all the character's VODs)
+        Treat the P1 Character as a Button
     Players (Clicking on player name dynamically routes to a player link containing all the player's VODs)
     Event Name (Clicking on the Event Name dynamically routes to a link containing all the VODs from the event)
     Link association with PlayButton - PlayButton links to timestamped VOD
@@ -214,5 +215,43 @@ That's one of today's goals!
 
 Modal = current WIP (Ask Kris how it goes!)
 
+---
 Clean up the Nav next (everything besides Add View)
 Then do Player 2 Functionality and Link Association
+
+
+
+--
+12/26 Update:
+
+I like about being its own page - I think it's necessary!
+
+Okay so what I can do with the about page is have it open in another browser tab when people access it via
+the register page instead of moving them from the register page! This makes it so the only thing I need a modal
+for probably is the Report functionality. I can just redirect people when they access the About from the
+nav dropdown - no need for a modal at all!
+
+need to make sykbound arts a <Link> - done!
+
+Add styling for navMenu items. I think that the <Link> might be overwriting the <li>'s styling, see if assigning it
+to the Link will fix things - done!
+
+after this, try to add some functionality to the menu that makes it disappear when uses either:
+click the x, click a menu item, or click anywhere outside of it. (i have an idea on how to do the first two 
+but this third option sounds difficult to do...probably gonna have to look that functionality up.
+)
+
+
+VOD LIST VIEW WORK
+DRAFT PLUS VIEW
+BACKEND START
+
+how do I fix this dropdown?
+
+Fixed characters dropdown!
+Adding in player 2 functionality rn.
+
+
+--
+add link association
+

@@ -125,6 +125,20 @@ body {
     margin-top: 5%;
 }
 
+.navLink:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.navLink:link {
+    text-decoration: none;
+    color: black;
+}
+
+.navLink {
+    color: black;
+}
+
 .navSideMenuHide {
     position: absolute;
     opacity: 0;
@@ -240,15 +254,20 @@ body {
             position: fixed;
             top: 170px;
             z-index: 100;
-            max-height: 200px;
+            max-height: 40vh;
+            /* So the goal is to decrease the viewport height and spread the items out */
             max-width: 250px;
-            overflow: auto;
+            overflow: scroll;
             background-color: #E2EDEE;
             margin-left: 3%;
         }
         .filterCharName {
             display: flex;
             align-items: center;
+            margin-top: 37%;
+        }
+        #filterHead {
+            margin-top: 1.8em;
         }
         /* VODLink CSS */
         .VODLink {

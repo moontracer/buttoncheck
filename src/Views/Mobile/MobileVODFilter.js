@@ -74,53 +74,60 @@ class MobileVODFilter extends React.Component {
                 */}
                 <div className={this.state.filterOpened ? "filterContent" : "hideFilterContent"}>
                     <a className="filterCharToggle" onClick = {this.showCharacters}>
-                        Characters
+                        Player 1 Character
+                    </a>
+                    <input type="text" placeholder="Player Name" className="playerName" />
+                </div>
+                <div className={this.state.filter2Opened ? "filterContent" : "hideFilterContent"}>
+                    {/* Should I use a div instead of an <a> tag? */}
+                    <a className="filterCharToggle" onClick={this.showCharacters}>
+                        Player 2 Character
                     </a>
                     <input type="text" placeholder="Player Name" className="playerName" />
                 </div>
                 {/* Character dropdown */}
                 <div className={this.state.showCharacters ? "filterCharacters" : "hideFilterCharacters"}>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing" id="filterHead">
                         <img className="filterImg" src={charlotta} alt="charlotta" />
                          Charlotta
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={ferry} alt="ferry" />
                         Ferry
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={gran} alt="gran" />
                         Gran
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={katalina} alt="katalina" />
                         Katalina 
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={ladiva} alt="ladiva" />
                         Ladiva
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={lancelot} alt="lancelot" />
                         Lancelot
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={lowain} alt="lowain" />
                         Lowain
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={metera} alt="metera" />
                         Metera
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={percival} alt="percival" />
                         Percival
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={vaseraga} alt="vaseraga" />
                         Vaseraga
                     </a>
-                    <a className="filterCharName">
+                    <a className="filterCharName filterSpacing">
                         <img className="filterImg" src={zeta} alt="zeta" />
                         Zeta
                     </a>
