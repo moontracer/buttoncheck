@@ -254,4 +254,62 @@ Adding in player 2 functionality rn.
 
 --
 add link association
+Starting the backend.
 
+
+
+Alright, let's give this some thought.
+
+So I'm going to need two tables in this database.
+
+The first table that I'm going to need is for the users, the second table that i'm going to need will be for the videos themselves.
+
+The users table is going to be a lot easier to archive, because the only fields that I'm going to need are:
+    Username
+    Password
+    Email
+    Activated - boolean that determines whether or not the account has been activated via email.
+    Use integer ID over GUID!
+        When it comes to using integers, users can make inferences about what information is where.
+        Do I want my URLs to be hackable by end users? What are my URLs going to even look like?
+            Let's think about this one for a bit.
+            So the following things are going to be updated in the URL when someone uses the site:
+                Event Name
+                Winner
+                Character in general, regardless of player 1 or player 2
+                Name of players, regardless of player 1 or player 2
+
+Potentially having a Players table?!? Hmm....
+    What would even be in this table?
+        ID
+        PlayerName
+        PlayerCharacter
+
+    In hindsight, I think this would work out really well. I can't really think of anything else to add to
+    that table.
+
+The awesome thing about this is that I can use email as a form of activation BUT the not-so-awesome thing about this is I have to wonder how I'm going to handle logging in. I think I can do something like:
+    
+    On second thought, it'd be WAY easier to do the method that's done by RedFox games. If I just have
+    the user login via Email and Password, that would be WAY easier to do.
+
+Okay, so TLDR:
+    Logging in via Email and Password
+    Users Table
+        UserID
+        Username
+        Password
+        Email
+        Activated
+    The big issue that I have with users is this. How will I handle logging in and logging out?
+        Logging In:
+            I think that this can be done by doing a GET request to the database, seeing if that email
+            and password exists then signing the player in. Maybe this would be an asynchronous API call? I'm not too certain like how would the user STAY signed in? Would I have to set a boolean in the table that determines Online / Offline status?
+    Players Table
+        PlayerID
+        PlayerName
+        PlayerCharacter
+    Videos Table
+        What is this table going to contain?
+        
+    
