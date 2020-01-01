@@ -305,11 +305,24 @@ Okay, so TLDR:
         Logging In:
             I think that this can be done by doing a GET request to the database, seeing if that email
             and password exists then signing the player in. Maybe this would be an asynchronous API call? I'm not too certain like how would the user STAY signed in? Would I have to set a boolean in the table that determines Online / Offline status?
+        Logging Out: ?!?
     Players Table
         PlayerID
         PlayerName
         PlayerCharacter
+    Events Table
+        EventID
+        EventName
     Videos Table
         What is this table going to contain?
-        
-    
+        Event Name (references the Events Table)
+        Winner  (This is going to be some Ghost data of sorts. The winner or loser will be displayed in the database but it won't be present in the actual UI like there won't be a Winner or Loser icon next to chaacters or anything of that sort.)
+            Okay but here's the thing. So from the dropdown, the user will be able to select if they'd like either player 1 or player 2 as the winner. Say if Moon is set to player 1 and player 1 winner is selected.
+            The program needs to be able to search for all the matches that have moon's playerID in it and if she won or not.
+            Oh whoa can I have this be a foreign key that references either Player1's PlayerID or Player2's PlayerID?!? I think this would work out extremely well.
+        Timestamp for Video. Smart to put timestamps / youtube links directly into database?
+        How will I handle videos that are reported?!? I actually have no idea lmao
+        Player1Name (how will I obtain this name?)
+        Player2Name (how will I obtain this name?)
+        Player1Character (how will I obtain this?)
+        Player2Character (how will I obtain this?)
