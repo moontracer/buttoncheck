@@ -326,3 +326,97 @@ Okay, so TLDR:
         Player2Name (how will I obtain this name?)
         Player1Character (how will I obtain this?)
         Player2Character (how will I obtain this?)
+
+    Database Logging In / Logging Out
+    Timestamps and Reports / Flags
+
+
+You can save login sessions and require them to cancel one login session if they log in on another device
+and just delete the login session completely when they're finished
+
+---
+Think about the things you'd want to store in the users table.
+what informtion would I need to be able to access the database in general?
+
+
+
+Flow of work would be something like this:
+Create DB
+connect DB with front end
+when user creates account, store user information into DB
+when user logs in, check if information entered matches a
+database record.
+if so, log them in. 
+
+
+When it comes to the prototype of this site, The only thing that the user is going to be logged in for actually is adding entries to the website. For something like this, would cookies or saving login sessions be necessary? Hmm...I don't really think so.
+
+--
+why use post as a login form method instead of get?
+set form action to auth? what are form acitons even?
+
+express for handling sessions and HTTP requests
+sessions package is used to determine if the user is logged in
+
+--
+Okay but why is logging in a post request instead of a get request?
+
+set a session variable when login is successful
+    it makes sense for the session variable to be a GUID
+    session variable is stored in browser cookies?
+check if that variable has been set to determine whether or not the user
+is logged in
+---
+Working on backend
+
+
+Authentication system
+different auth flow
+
+auth0 lets you support logging in via e-mail / password / or google oauth
+
+auth tokens - sent by the server to client when the user authenticates themselves
+auth token time limit?!?
+
+signing in provides a id_token for profile info and access tokens (used by clients to access api)
+
+create a new auth0 client, client id and domain can be found in tthe dashboard
+
+
+so the api is created with c# / .net core?!?
+
+how would I retrieve which user added that to the database? would i even want to store that?
+
+little asp.net core book
+
+---
+Alright, let's think about what information is going to be stored via the API.
+
+Something I'd like to look into storing in the database is the user who uploaded the content. I wonder if it's possible for me to do that but at the moment I'm uncertain.
+    post-MVP, possibly?
+
+Alright, let's look at the basic gist of everything that this API is going to contain and need.
+
+--
+Information that the API will contain:
+
+Characters
+	CharacterID GUID 
+	CharacterName
+Players
+	PlayerID GUID
+	PlayerName
+Events
+	EventID GUID
+	EventName
+Videos
+	VideoID GUID
+	Event Name (Foreign key, references event table)
+	Player1Name (Foreign key, references players table)
+	Player1Character (Foreign key, references characters table)
+	Player2Name
+	Player2Character
+	VideoLink
+
+steps took:
+1. created all the models in an empty asp .net core project
