@@ -25,7 +25,7 @@ class MobileNav extends React.Component {
     }
     render(){
         return (
-            <div>
+            <div className="skyboundHeadContainer">
             <nav>
                 <Link to="/" id="skyboundHeader"><span>SKYBOUND ARTS</span></Link>
                 <PlusSquare color="rgba(255, 255, 255, 1)" />

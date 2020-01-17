@@ -186,6 +186,8 @@ body {
         #subforumBanner {
             max-width: 100%;
             max-height: 100%;
+            /* display set to none to temporarily mess with nav change */
+            display: none;
         }
         /* The issue has to do with the section's right margin */
         /* Mobile forum tags that are used for buttons */
@@ -294,6 +296,7 @@ body {
         }
         #skyboundHeader {
             font-weight: bold;
+            font-size: 1.2em;
         }
         /* filter container */
         .filterContainer {
@@ -409,5 +412,21 @@ body {
         }
         .hideModal {
             display: none;
+        }
+        /* NEW CSS implemented on 1/17/2020 - skyboundHeadContainer and more additions
+         */
+        .skyboundHeadContainer {
+            background-image: url('./images/granblueBanner.png');
+            background-size: cover;
+            height: 15vh;
+            /* so backdrop filter doesn't
+               serve the purpose that i would've liked for it to
+
+               in order to do that, i'd have to figure out how to
+               decrease the opacity of the background image
+
+               worst case scenario i have to change the image's
+               opacity using an external program
+            */
         }
     }
