@@ -28,11 +28,13 @@ class MobileNav extends React.Component {
             <div className="skyboundHeadContainer">
             <nav>
                 <Link to="/" id="skyboundHeader"><span>SKYBOUND ARTS</span></Link>
-                <PlusSquare color="rgba(255, 255, 255, 1)" />
-                <Menu color="white" id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} />
-                <X color="white" id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle} />
+                <PlusSquare size={25} color="rgba(255, 255, 255, 1)" />
+                <a href="http://forums.skyboundarts.com" id="skyboundHeader">FORUMS</a>
+                <Menu size={25} color="white" id={this.state.menuActivated ? "navMenuMarkerHidden" : "navMenuMarker"} alt="menuMarker" onClick={this.menuToggle} />
+                <X size={25} color="white" id={this.state.menuActivated ? "navMenuX" : "navMenuXHidden"} onClick={this.menuToggle} />
             </nav>
             <MobileNavMenu menuActivated={this.state.menuActivated} />
+            <p id="matchFinderHeader">Match Finder</p>
             </div>
         )
     }

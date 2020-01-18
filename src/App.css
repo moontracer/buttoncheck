@@ -48,8 +48,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    /* Commented out bg color real fast */
-    /* background-color: #DADFE5; */
+    background-color: #E2EDEE;
 }
 
 
@@ -295,8 +294,8 @@ body {
             margin-left: 3%;
         }
         #skyboundHeader {
-            font-weight: bold;
-            font-size: 1.2em;
+            font-weight: 800;
+            font-size: 1.3em;
         }
         /* filter container */
         .filterContainer {
@@ -419,14 +418,11 @@ body {
             background-image: url('./images/granblueBanner.png');
             background-size: cover;
             height: 15vh;
-            /* so backdrop filter doesn't
-               serve the purpose that i would've liked for it to
-
-               in order to do that, i'd have to figure out how to
-               decrease the opacity of the background image
-
-               worst case scenario i have to change the image's
-               opacity using an external program
-            */
+        }
+        #matchFinderHeader {
+            color: white;
+            text-align: center;
+            font-size: 1.23em;
+            font-weight: bold;
         }
     }

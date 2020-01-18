@@ -20,6 +20,8 @@ small.
 
         ALSO ADD FORUM WORD
 
+Next thing that I need to do is add the words match finder
+
 2. Issues with Character Menu
     Solutions:
             *If the user clicks outside of the character menu's div, close
