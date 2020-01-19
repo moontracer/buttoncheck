@@ -47,3 +47,25 @@ Next thing that I need to do is add the words match finder
 6. When someone clicks player name, trigger API request that retrieves all videos containing said player in database.
 7. Play button containing timestamp of video (Do I want youtube links as strings in my database? Is that okay?)
 8. Report functionality (Still do not know how to handle this)
+
+
+How am I going to handle this report functionality?
+
+Email!!!
+
+
+What's wrong with the video?
+--
+Usage of Hate Speech (Racism, Transphobia, etc.)
+Incorrect Video Link / Video Unavailable
+Other (Please elaborate below)
+
+If other was selected or you'd like to elaborate on either of the above points, please feel the field below.
+
+
+Submit
+
+The main question that I have right now is this:
+
+How will I know which video the user is reporting when they click that button? It's the thing that's currently tossing me for the biggest loop.
+

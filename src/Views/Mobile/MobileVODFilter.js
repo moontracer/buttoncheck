@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronUp, ChevronDown } from 'react-feather';
+import { ChevronUp, ChevronDown} from 'react-feather';
 import charlotta from '../../charImages/charlotta.png';
 import ferry from '../../charImages/ferry.png';
 import gran from '../../charImages/gran.png';
@@ -18,11 +18,15 @@ class MobileVODFilter extends React.Component {
         this.state = {
             filterOpened: false,
             showCharacters: false,
-            filter2Opened: false
+            filter2Opened: false,
+            selectedCharacter1: false,
+            selectedCharacter2: false
         };
         this.openFilter = this.openFilter.bind(this);
         this.showCharacters = this.showCharacters.bind(this);
         this.openFilter2 = this.openFilter2.bind(this);
+        this.selectCharacter1 = this.selectCharacter1.bind(this);
+        this.selectCharacter2 = this.selectCharacter2.bind(this);
     }
     openFilter(){
         this.setState({filterOpened: !this.state.filterOpened},
@@ -47,7 +51,23 @@ class MobileVODFilter extends React.Component {
         }
         )
     }
+    selectCharacter1(){
+        this.showCharacters();
+        this.setState({
+            selectedCharacter1: true
+        })
+    }
+    selectCharacter2(){
+        this.showCharacters();
+        this.setState({
+            selectedCharacter2: true
+        })
+
+    }
     render(){
+        // declare variables for img src here
+        var character1;
+        var character2;
         return (
             <div>
                 <div className="filterContainer">
@@ -87,48 +107,48 @@ class MobileVODFilter extends React.Component {
                 </div>
                 {/* Character dropdown */}
                 <div className={this.state.showCharacters ? "filterCharacters" : "hideFilterCharacters"}>
-                    <a className="filterCharName filterSpacing" id="filterHead">
-                        <img className="filterImg" src={charlotta} alt="charlotta" />
+                    <a className="filterCharName filterSpacing" id="filterHead" onClick={this.state.selectedCharacter1 ? this.selectCharacter1 : this.selectCharacter2}>
+                        <img className="filterImg" src={charlotta} alt="charlotta" name="charlotta" />
                          Charlotta
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={ferry} alt="ferry" />
+                        <img className="filterImg" src={ferry} alt="ferry" name="ferry" />
                         Ferry
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={gran} alt="gran" />
+                        <img className="filterImg" src={gran} alt="gran" name="gran" />
                         Gran
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={katalina} alt="katalina" />
+                        <img className="filterImg" src={katalina} alt="katalina" name="katalina" />
                         Katalina 
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={ladiva} alt="ladiva" />
+                        <img className="filterImg" src={ladiva} alt="ladiva" name="ladiva" />
                         Ladiva
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={lancelot} alt="lancelot" />
+                        <img className="filterImg" src={lancelot} alt="lancelot" name="lancelot" />
                         Lancelot
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={lowain} alt="lowain" />
+                        <img className="filterImg" src={lowain} alt="lowain" name="lowain" />
                         Lowain
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={metera} alt="metera" />
+                        <img className="filterImg" src={metera} alt="metera" name="metera" />
                         Metera
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={percival} alt="percival" />
+                        <img className="filterImg" src={percival} alt="percival" name="percival" />
                         Percival
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={vaseraga} alt="vaseraga" />
+                        <img className="filterImg" src={vaseraga} alt="vaseraga" name="vaseraga" />
                         Vaseraga
                     </a>
                     <a className="filterCharName filterSpacing">
-                        <img className="filterImg" src={zeta} alt="zeta" />
+                        <img className="filterImg" src={zeta} alt="zeta" name="zeta" />
                         Zeta
                     </a>
                </div>

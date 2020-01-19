@@ -141,6 +141,8 @@ body {
 .navSideMenuHide {
     position: absolute;
     opacity: 0;
+    /* temporary fix? */
+    display: none;
 }
 
 /* CSS Resize Test */
