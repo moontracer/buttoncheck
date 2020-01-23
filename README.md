@@ -148,3 +148,85 @@ the videos section, I'd have to do API searches that checks Player1Character the
 Create Event (will be done when the user submits a video if the event doesn't already exist in the event database)
 Get Event (will search the Videos table for all VODs tagged with event X)
 GetCharacter (will search the Videos table for all VODs featuring character X)
+
+Startup.cs
+services provide your app functionality
+
+in configureservices, dependencies are registered
+
+configure sets up request pipeline
+
+SkyboundController
+
+move connection string in skyboundcontext out of optionsBuilder.UseSqlServer and to the appsettings.json
+
+I think I'm going to need a different controller for each of my classes possibly? Hmm...
+
+Yeah, that's the most ideal thing to do. One controller for each database table.
+
+We're going to go with synchronous programming due to the fact that the operations themselves are rather simple, not taxing, and essential to the program's overall flow.
+
+ActionResult retun type for each API CRUD action
+
+Would I have to import a migration based on the current status of my database when doing a database first approach?
+
+--
+
+Okay!
+
+Let's see all the routes that are going to be needed today.
+
+DONE Search Videos By Character (VideosController)
+DONE Create Event (EventController)
+DONE Search Videos By Event Name (VideoController)
+DONE Seearch Videos By Player Name (VideoController)
+DONE Create Player (PlayerController)
+Create Video (VideoController)
+
+I believe that I'm gonna have to create one HTTP Get request for Video Controller and allow the user to pass in parameters.
+Certain things will have to be taken into consideration though. For instance, which parameters will the user be able to search with, how will it be done, etc.?
+
+_context.Events.Find()
+
+
+hmmm
+
+DONE on second thought, i am going to have to get all the events
+DONE and all the players
+
+
+DONE and all the characters
+
+DONE Get all the characters
+DONE Creating a character
+
+
+because the user will access them when they load the webpage. Let's start with getting all the events first then backtracking.
+
+
+There's 4 Database Tables:
+
+Characters - simple table that has an ID and name for each of the characters in the video
+    API options:
+    - Get all the characters in the table. This command will be ran when the app is first loaded so users can choose to select
+    the character they'd like to see videos of.
+Events - simple table that has an ID and name for each event that a video is filmed at
+    API options:
+    - Get all the events. This command will also be ran when the app is first loaded so users can choose to select the event that they'd like to see videos from.
+    - Create event. This command will be ran after the user creates a new video. If the video is tagged with an event that isn't in the database, it'll be added with this command. Otherwise, the attempt to add an event to this table will fail due to the Event's Name field having a Unique constraint.
+Person - table featuring an ID and name for each person that's featured in the video
+    API options:
+    - Get all the people. This command will also be ran when the app is first loaded so users can choose to select which person they'd like to see videos from.
+    - Create person. This command will be ran after the user creates a new video. If the video is tagged with a person that isn't in the database, it'll be added with this command. Otherwise, the attempt to add a person to this table will fail due to the Person's Name field having a Unique constraint.
+Videos - table that contains the video links as well as metadata such as Events, People, etc. The most important table.
+    API options:
+    - Get All Videos. Ran when the app is first loaded.
+    - Search videos by character. When the user selects a specific character they'd like to see videos of, the API loads all the entries in the table where the character name is the same one as the parameter
+    -Search Videos By Person Name
+    - Search Videos By Event Name
+    Both of these API commands follow the same rule as Search Videos By Character
+    Then there's simple create video and delete video commands.
+
+The main question you posed to me - "can it not be one call?" makes me think I can create one Search command and have all of the parameters be optional, only searching based on parameters that the user sets. That'd be the best way to handle this right?
+
+Alright, now that I have an idea on how I want to structure the API and think that's going to take a big bulk of the workload for the rest of the development cycle, I'm going to get the smaller yet important tasks such as making the page responsive and setting up the forum handled. First things first, let's look into responsive design and the forum.
