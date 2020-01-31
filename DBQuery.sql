@@ -84,4 +84,32 @@ The information that's placed into these tables is based on the event and player
 After every video insertion, a query atttempt will be made to insert an event or player into the table. If the
 player or Event has been entered into the table before, it won't go through.
 
+CREATE TABLE dbo.VideoTags (
+	TagID INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	Tag_Name NVARCHAR(20) NOT NULL UNIQUE
+);
+
+GO
+
+INSERT INTO dbo.VideoTags
+([Tag_Name])
+VALUES
+	(N'Perfect'),
+	(N'Comeback'),
+	(N'Pressure'),
+	(N'Spacing')
+GO
+
+CREATE TABLE dbo.MapVideoTag (
+	MapID INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	Video_ID INT NOT NULL,
+	Tag_ID INT NOT NULL,
+	FOREIGN KEY (Video_ID)
+	REFERENCES dbo.Videos(VideoID),
+	FOREIGN KEY (Tag_ID)
+	REFERENCES dbo.VideoTags(TagID)
+);
+
+GO
+
 */

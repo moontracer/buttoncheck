@@ -1,9 +1,16 @@
-/* Importing Noto Sans JP - This font is used for the character header */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
-
-/* TO DO: LOOK INTO PAIRING FONTS */
+/* Pairs Noto Sans JP with Open Sans */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Open+Sans:800&display=swap');
 
 /* These style settings apply to all views */
+
+/* FROM TOP TO BOTTOM. */
+
+body {
+    background-color: #E2EDEE;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: grid;
+    /* grid-template-rows: 12; */
+}
 
 #loginContainer {
     color: #59A4FF;
@@ -48,13 +55,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    background-color: #E2EDEE;
-}
-
-
-
-/* Temporarily setting the body's background color to match Granblue */
-body {
     background-color: #E2EDEE;
 }
 
@@ -424,7 +424,9 @@ body {
         #matchFinderHeader {
             color: white;
             text-align: center;
+            /* font-family: 'Roboto', sans-serif; */
+            font-family: 'Open Sans', sans-serif;
             font-size: 1.23em;
-            font-weight: bold;
+            /* font-weight: 900; */
         }
     }
